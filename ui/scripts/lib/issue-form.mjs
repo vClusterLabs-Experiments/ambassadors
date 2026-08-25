@@ -20,7 +20,7 @@ function cleanFormValue(value) {
   return cleaned
 }
 
-export function parseIssueForm(body = '') {
+export function parseIssueForm(body = '', activityTypes = {}) {
   const headings = [...body.matchAll(/^###\s+(.+?)\s*$/gm)]
   const result = {}
 
@@ -35,7 +35,10 @@ export function parseIssueForm(body = '') {
   }
 
   if (result.contribution_type) {
-    result.contribution_type = result.contribution_type.split(/\s+[-—–]\s+/)[0].trim()
+    const selection = result.contribution_type
+    const legacyKey = selection.split(/\s+[-—–]\s+/)[0].trim()
+    const matchingEntry = Object.entries(activityTypes).find(([, activity]) => activity.label === selection)
+    result.contribution_type = matchingEntry?.[0] ?? legacyKey
   }
 
   return result
