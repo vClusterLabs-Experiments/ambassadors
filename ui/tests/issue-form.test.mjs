@@ -54,10 +54,11 @@ test('maps a human-readable contribution label to its stable key', () => {
   assert.equal(form.contribution_type, 'tutorial')
 })
 
-test('keeps the contribution dropdown labels in sync with the activity matrix', async () => {
+test('keeps submission labels and contribution options in sync with program configuration', async () => {
   const issueForm = YAML.parse(await readFile('../.github/ISSUE_TEMPLATE/contribution.yml', 'utf8'))
   const matrix = YAML.parse(await readFile('../config/activity-types.yml', 'utf8')).activity_types
   const dropdown = issueForm.body.find((field) => field.id === 'contribution_type')
+  assert.deepEqual(issueForm.labels, ['submission:ambassador', 'status:needs-review'])
   assert.deepEqual(dropdown.attributes.options, Object.values(matrix).map((activity) => activity.label))
 })
 

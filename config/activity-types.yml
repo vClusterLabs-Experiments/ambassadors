@@ -1,3 +1,5 @@
+# Point values and ranges are reference guidance for reviewers only. The value in an
+# authorized maintainer's /approve command is the source of truth for each record.
 activity_types:
   social_thread:
     label: Social thread

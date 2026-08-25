@@ -3,6 +3,7 @@ description: Submit completed ambassador activity for maintainer review.
 title: "[Contribution]: "
 labels:
   - submission:ambassador
+  - status:needs-review
 body:
   - type: markdown
     attributes:

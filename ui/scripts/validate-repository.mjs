@@ -39,7 +39,7 @@ for (const record of ledger.contributions ?? []) {
   const activity = matrix.activity_types?.[record.activity?.type]
   if (!activity) errors.push(`${record.id}: unknown contribution type ${record.activity?.type}.`)
   else {
-    const points = validateApprovalPoints(activity, record.scoring?.points)
+    const points = validateApprovalPoints(record.scoring?.points)
     if (!points.valid) errors.push(`${record.id}: ${points.message}`)
   }
   if (!record.scoring?.reviewer || !record.scoring?.rationale || !record.scoring?.approved_at) {

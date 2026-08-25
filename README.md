@@ -18,6 +18,8 @@ This repository is the home of the ambassador directory and the approved activit
 
 > Automation never calculates, estimates, suggests, or recommends contribution points. Only an authorized maintainer can review the evidence and approve points.
 
+The values and ranges in [config/activity-types.yml](config/activity-types.yml) are reference guidance only. A maintainer may approve a different positive whole-number value, and the value in the `/approve` command is the source of truth.
+
 ## Submit an activity
 
 1. Open the [Ambassador contribution form](https://github.com/vClusterLabs-Experiments/ambassadors/issues/new?template=contribution.yml).
@@ -151,7 +153,7 @@ An authorized reviewer approves a validated issue with:
 
 The workflow verifies the reviewer, identity, contribution type, approved value, note, source issue, evidence, and date before it can open a contribution record pull request. The contribution type always comes from the original issue submission, and the prepared record is validated in the same workflow run, because pull requests opened by automation do not start a separate check.
 
-Approved records are stored in [contributions/contributions.yml](contributions/contributions.yml), then GitHub Actions rebuilds the dashboard for GitHub Pages. Points come from the fixed values and ranges in [config/activity-types.yml](config/activity-types.yml); the program has no monthly or quarterly point baseline.
+Approved records are stored in [contributions/contributions.yml](contributions/contributions.yml), then GitHub Actions rebuilds the dashboard for GitHub Pages. Point values and ranges in [config/activity-types.yml](config/activity-types.yml) are reviewer references, not enforced limits; the authorized maintainer's `/approve` command determines the recorded score. The program has no monthly or quarterly point baseline.
 
 ## Community conduct
 
