@@ -1,0 +1,80 @@
+activity_types:
+  social_thread:
+    label: Social thread
+    points:
+      type: fixed
+      value: 5
+
+  community_help:
+    label: Community help in Slack
+    points:
+      type: range
+      minimum: 5
+      maximum: 15
+
+  blog_post:
+    label: Blog post
+    points:
+      type: fixed
+      value: 15
+
+  short_technical_video:
+    label: Short technical video
+    points:
+      type: fixed
+      value: 15
+
+  tutorial:
+    label: Tutorial
+    points:
+      type: fixed
+      value: 20
+
+  meetup_talk:
+    label: Meetup talk
+    points:
+      type: fixed
+      value: 20
+
+  podcast_guest:
+    label: Podcast guest
+    points:
+      type: fixed
+      value: 20
+
+  livestream:
+    label: Livestream
+    points:
+      type: fixed
+      value: 25
+
+  meetup_organizer:
+    label: Organizing a meetup
+    points:
+      type: fixed
+      value: 25
+
+  conference_talk:
+    label: Conference talk
+    points:
+      type: fixed
+      value: 30
+
+  workshop:
+    label: Workshop
+    points:
+      type: fixed
+      value: 35
+
+  course:
+    label: Course
+    points:
+      type: fixed
+      value: 50
+
+  project_contribution:
+    label: Project contribution
+    points:
+      type: range
+      minimum: 5
+      maximum: 50
