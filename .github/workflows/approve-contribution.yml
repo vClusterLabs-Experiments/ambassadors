@@ -15,22 +15,32 @@ concurrency:
 
 jobs:
   approve:
-    if: github.event.issue.pull_request == null && startsWith(github.event.comment.body, '/approve')
+    if: github.event.issue.pull_request == null
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: ui
     steps:
+      - id: command
+        name: Detect approval command
+        uses: actions/github-script@v8
+        with:
+          script: return context.payload.comment.body.trimStart().startsWith('/approve')
+
       - uses: actions/checkout@v6
+        if: steps.command.outputs.result == 'true'
         with:
           ref: main
       - uses: actions/setup-node@v6
+        if: steps.command.outputs.result == 'true'
         with:
           node-version: 22
-      - run: npm ci
+      - if: steps.command.outputs.result == 'true'
+        run: npm ci
 
       - id: approval
         name: Verify human approval and prepare record
+        if: steps.command.outputs.result == 'true'
         run: node scripts/record-approval.mjs
         env:
           GH_TOKEN: ${{ github.token }}

@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises'
 import test from 'node:test'
 import YAML from 'yaml'
 
-test('stores the approved contribution matrix and program record prefix', async () => {
+test('stores the contribution point references and program record prefix', async () => {
   const matrix = YAML.parse(await readFile('../config/activity-types.yml', 'utf8')).activity_types
   assert.equal(Object.keys(matrix).length, 13)
   assert.deepEqual(matrix.social_thread.points, { type: 'fixed', value: 5 })

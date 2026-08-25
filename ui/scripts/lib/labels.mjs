@@ -1,6 +1,6 @@
 export const LABELS = {
   'submission:ambassador': { name: 'submission:ambassador', color: '5DDBC4', description: 'Ambassador activity submission' },
-  'status:needs-review': { name: 'status:needs-review', color: 'F6C85F', description: 'Validated and waiting for human review' },
+  'status:needs-review': { name: 'status:needs-review', color: 'F6C85F', description: 'Waiting for human review' },
   'status:needs-information': { name: 'status:needs-information', color: 'E05D44', description: 'Submitter action is required' },
   'status:pr-open': { name: 'status:pr-open', color: '7C5CFC', description: 'Approved contribution pull request is open' },
   'status:approved': { name: 'status:approved', color: '5DDBC4', description: 'Contribution approved by an authorized reviewer' },

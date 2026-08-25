@@ -85,21 +85,10 @@ export function findActiveAmbassador(registry, account) {
   return { error: 'This GitHub account is not registered as an active ambassador.' }
 }
 
-export function validateApprovalPoints(activity, points) {
-  if (!Number.isInteger(points) || points < 0) {
-    return { valid: false, message: 'Points must be a whole number.' }
-  }
-  if (activity.points.type === 'fixed') {
-    const allowed = activity.points.value
-    return points === allowed
-      ? { valid: true }
-      : { valid: false, message: `This fixed activity requires exactly ${allowed} points.` }
-  }
-  const minimum = activity.points.minimum
-  const maximum = activity.points.maximum
-  return points >= minimum && points <= maximum
+export function validateApprovalPoints(points) {
+  return Number.isSafeInteger(points) && points > 0
     ? { valid: true }
-    : { valid: false, message: `This ranged activity allows ${minimum}–${maximum} points.` }
+    : { valid: false, message: 'Points must be a positive whole number.' }
 }
 
 export function parseApprovalCommand(body = '') {

@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   validate:
-    if: contains(github.event.issue.labels.*.name, 'submission:ambassador')
+    if: contains(github.event.issue.labels.*.name, 'submission:ambassador') || startsWith(github.event.issue.title, '[Contribution]:')
     runs-on: ubuntu-latest
     defaults:
       run:

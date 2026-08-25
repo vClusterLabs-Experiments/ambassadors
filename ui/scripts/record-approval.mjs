@@ -71,7 +71,9 @@ if (!command) {
           if (!activity) {
             await reject('The original contribution type is not in the approved contribution matrix.')
           } else {
-            const pointsCheck = validateApprovalPoints(activity, command.points)
+            // Configured points are reviewer guidance. The authorized maintainer's
+            // command is authoritative as long as it supplies a positive whole number.
+            const pointsCheck = validateApprovalPoints(command.points)
             if (!pointsCheck.valid) {
               await reject(pointsCheck.message)
             } else {

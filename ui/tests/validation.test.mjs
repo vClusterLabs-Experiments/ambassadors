@@ -39,9 +39,10 @@ test('parses approval commands with a required note', () => {
   assert.equal(parseApprovalCommand('/approve points=20'), null)
 })
 
-test('enforces configured fixed and ranged points after human approval', () => {
-  assert.deepEqual(validateApprovalPoints({ points: { type: 'fixed', value: 20 } }, 20), { valid: true })
-  assert.match(validateApprovalPoints({ points: { type: 'fixed', value: 20 } }, 19).message, /exactly 20/)
-  assert.deepEqual(validateApprovalPoints({ points: { type: 'range', minimum: 5, maximum: 15 } }, 10), { valid: true })
-  assert.match(validateApprovalPoints({ points: { type: 'range', minimum: 5, maximum: 15 } }, 20).message, /5–15/)
+test('accepts any positive whole-number score chosen by a maintainer', () => {
+  assert.deepEqual(validateApprovalPoints(10), { valid: true })
+  assert.deepEqual(validateApprovalPoints(100), { valid: true })
+  assert.match(validateApprovalPoints(0).message, /positive whole number/)
+  assert.match(validateApprovalPoints(1.5).message, /positive whole number/)
+  assert.match(validateApprovalPoints(Number.MAX_SAFE_INTEGER + 1).message, /positive whole number/)
 })
