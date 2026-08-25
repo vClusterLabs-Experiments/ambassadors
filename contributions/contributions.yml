@@ -1,0 +1,16 @@
+contributions:
+  - id: vc-2026-0001
+    source_issue: 1
+    ambassador:
+      github_username: hrittikhere
+      github_user_id: 67012359
+    activity:
+      type: tutorial
+      title: "From data residency to digital sovereignty: Architectural patterns for cloud native platforms"
+      date: 2026-06-16
+      evidence_url: https://www.cncf.io/blog/2026/06/16/from-data-residency-to-digital-sovereignty-architectural-patterns-for-cloud-native-platforms/
+    scoring:
+      points: 20
+      reviewer: hrittikhere
+      rationale: Published an in-depth CNCF technical guide to architectural patterns for cloud native digital sovereignty using tenant clusters and vCluster.
+      approved_at: 2026-08-25T14:55:33Z

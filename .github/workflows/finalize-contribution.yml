@@ -1,0 +1,50 @@
+name: Finalize contribution status
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  issues: write
+
+jobs:
+  finalize:
+    if: startsWith(github.event.pull_request.head.ref, 'contribution/issue-')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v8
+        with:
+          script: |
+            const issueNumber = Number(context.payload.pull_request.head.ref.replace('contribution/issue-', ''))
+            if (!Number.isInteger(issueNumber)) return
+
+            const merged = context.payload.pull_request.merged
+            const status = merged ? 'status:credited' : 'status:needs-review'
+            const color = merged ? 'B7F34A' : 'F6C85F'
+            try {
+              await github.rest.issues.getLabel({ owner: context.repo.owner, repo: context.repo.repo, name: status })
+            } catch (error) {
+              if (error.status !== 404) throw error
+              await github.rest.issues.createLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: status,
+                color,
+                description: merged ? 'Contribution record merged into the central ledger' : 'Validated and waiting for human review',
+              })
+            }
+
+            const issue = await github.rest.issues.get({ owner: context.repo.owner, repo: context.repo.repo, issue_number: issueNumber })
+            const labels = issue.data.labels
+              .map((label) => typeof label === 'string' ? label : label.name)
+              .filter((label) => !label.startsWith('status:'))
+            labels.push(status)
+            await github.rest.issues.setLabels({ owner: context.repo.owner, repo: context.repo.repo, issue_number: issueNumber, labels })
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: merged
+                ? `<!-- ambassador-finalization -->\nContribution record merged in #${context.payload.pull_request.number}. The dashboard rebuild has been queued.`
+                : `<!-- ambassador-finalization -->\nContribution record pull request #${context.payload.pull_request.number} was closed without merging. This submission has returned to maintainer review.`,
+            })

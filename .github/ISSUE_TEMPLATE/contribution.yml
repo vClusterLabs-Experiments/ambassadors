@@ -1,0 +1,94 @@
+name: Ambassador contribution
+description: Submit completed ambassador activity for maintainer review.
+title: "[Contribution]: "
+labels:
+  - submission:ambassador
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to the vCluster community. Automation validates this submission, but only an authorized maintainer can decide and approve points.
+
+        Enter only your current GitHub username below. Your immutable numeric GitHub user ID is resolved automatically through the GitHub API and is never entered manually.
+
+  - type: input
+    id: github_username
+    attributes:
+      label: Ambassador GitHub username
+      description: Enter your current username as registered with the ambassador program, without the @ symbol. Do not enter a numeric GitHub ID.
+      placeholder: hrittikhere
+    validations:
+      required: true
+
+  - type: dropdown
+    id: contribution_type
+    attributes:
+      label: Contribution type
+      description: Select the type that best matches the completed contribution.
+      options:
+        - social_thread - Social thread
+        - community_help - Community help in Slack
+        - blog_post - Blog post
+        - short_technical_video - Short technical video
+        - tutorial - Tutorial
+        - meetup_talk - Meetup talk
+        - podcast_guest - Podcast guest
+        - livestream - Livestream
+        - meetup_organizer - Organizing a meetup
+        - conference_talk - Conference talk
+        - workshop - Workshop
+        - course - Course
+        - project_contribution - Project contribution
+    validations:
+      required: true
+
+  - type: input
+    id: contribution_title
+    attributes:
+      label: Contribution title
+      placeholder: "From data residency to digital sovereignty"
+    validations:
+      required: true
+
+  - type: input
+    id: completion_date
+    attributes:
+      label: Completion or publication date
+      description: Use YYYY-MM-DD.
+      placeholder: "2026-08-20"
+    validations:
+      required: true
+
+  - type: input
+    id: evidence_url
+    attributes:
+      label: Evidence URL
+      description: Provide a public HTTPS URL that a reviewer can open.
+      placeholder: https://www.cncf.io/blog/example-post/
+    validations:
+      required: true
+
+  - type: textarea
+    id: contribution_summary
+    attributes:
+      label: Contribution summary
+      description: Explain what you completed and who it was for.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact or outcome
+      description: Describe the result, reach, feedback, or community benefit.
+    validations:
+      required: true
+
+  - type: input
+    id: related_submission
+    attributes:
+      label: Related submission, if applicable
+      description: Link a related issue or enter N/A when there is none.
+      placeholder: N/A
+    validations:
+      required: true

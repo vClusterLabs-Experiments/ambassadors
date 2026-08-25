@@ -1,0 +1,33 @@
+# Ambassador directory.
+#
+# github_user_id is owned by automation. Leave it null when adding an ambassador;
+# the identity workflow resolves it from github_username through the GitHub API.
+# Do not enter or change a numeric GitHub ID manually.
+ambassadors:
+  - name: Hrittik Roy
+    github_username: hrittikhere
+    github_user_id: 67012359
+    status: active
+    joined_at: 2026-08-25
+    role: Platform Advocate at vCluster Labs
+    location: Kolkata, India
+    timezone: Asia/Kolkata
+    pronouns: null
+    bio: Cloud native and AI infrastructure advocate who turns complex platform concepts into practical demos, documentation, talks, and technical deep dives.
+    interests:
+      - Kubernetes
+      - Platform engineering
+      - AI infrastructure
+      - Developer experience
+      - MLOps
+      - Open source communities
+    languages:
+      - English
+    socials:
+      github: https://github.com/hrittikhere
+      linkedin: https://linkedin.com/in/hrittikhere
+      x: https://x.com/hrittikhere
+      bluesky: null
+      website: https://hrittikhere.com/
+      credly: https://www.credly.com/users/hrittikhere
+      sessionize: https://sessionize.com/hrittikhere

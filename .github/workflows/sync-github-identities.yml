@@ -1,0 +1,43 @@
+name: Sync ambassador GitHub identities
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ambassadors/ambassadors.yml
+  schedule:
+    - cron: '17 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ui
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      - run: npm ci
+      - name: Resolve immutable IDs and current usernames
+        run: node scripts/sync-identities.mjs
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ github.token }}
+          branch: automation/refresh-github-identities
+          delete-branch: true
+          add-paths: ambassadors/ambassadors.yml
+          commit-message: Sync ambassador GitHub identities
+          title: Sync ambassador GitHub identities
+          body: Resolves missing immutable GitHub user IDs and refreshes current usernames and GitHub profile links in the ambassador registry.
+          labels: identity-maintenance

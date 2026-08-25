@@ -1,0 +1,4 @@
+# Only active users in this list may use /approve.
+reviewers:
+  - github_username: hrittikhere
+    active: true
