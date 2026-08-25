@@ -26,19 +26,19 @@ body:
       label: Contribution type
       description: Select the type that best matches the completed contribution.
       options:
-        - social_thread - Social thread
-        - community_help - Community help in Slack
-        - blog_post - Blog post
-        - short_technical_video - Short technical video
-        - tutorial - Tutorial
-        - meetup_talk - Meetup talk
-        - podcast_guest - Podcast guest
-        - livestream - Livestream
-        - meetup_organizer - Organizing a meetup
-        - conference_talk - Conference talk
-        - workshop - Workshop
-        - course - Course
-        - project_contribution - Project contribution
+        - Social thread
+        - Community help in Slack
+        - Blog post
+        - Short technical video
+        - Tutorial
+        - Meetup talk
+        - Podcast guest
+        - Livestream
+        - Organizing a meetup
+        - Conference talk
+        - Workshop
+        - Course
+        - Project contribution
     validations:
       required: true
 

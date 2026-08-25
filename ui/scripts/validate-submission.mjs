@@ -25,7 +25,7 @@ const activityConfig = await readYaml('config/activity-types.yml')
 const registry = await readYaml('ambassadors/ambassadors.yml')
 const ledger = await readYaml('contributions/contributions.yml')
 
-const form = parseIssueForm(issue.body ?? '')
+const form = parseIssueForm(issue.body ?? '', activityConfig.activity_types)
 const problems = []
 for (const key of REQUIRED_FIELDS) {
   if (!form[key]) problems.push(`${key.replaceAll('_', ' ')} is required.`)

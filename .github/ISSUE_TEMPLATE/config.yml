@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: Ambassador program support
-    url: https://www.vcluster.com/community
+    url: https://slack.loft.sh/
     about: Ask a question that is not a contribution submission.
