@@ -14,3 +14,18 @@ contributions:
       reviewer: hrittikhere
       rationale: Published an in-depth CNCF technical guide to architectural patterns for cloud native digital sovereignty using tenant clusters and vCluster.
       approved_at: 2026-08-25T14:55:33Z
+  - id: vc-2026-0005
+    source_issue: 5
+    ambassador:
+      github_username: hrittikhere
+      github_user_id: 67012359
+    activity:
+      type: tutorial
+      title: Introducing and a Deep Dive Into Dynamo with vCluster
+      date: 2026-08-25
+      evidence_url: https://www.vcluster.com/blog/nvidia-dynamo-with-vcluster
+    scoring:
+      points: 20
+      reviewer: hrittikhere
+      rationale: Published a vCluster blog post introducing NVIDIA Dynamo integration
+      approved_at: 2026-08-25T16:30:28Z
