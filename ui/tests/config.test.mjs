@@ -15,13 +15,14 @@ test('stores the contribution point references and program record prefix', async
   assert.equal(program.quarterly_baseline_points, undefined)
 })
 
-test('stores ambassador profiles separately with automation-managed GitHub IDs', async () => {
+test('stores ambassador profiles with maintainer-resolved GitHub IDs', async () => {
   const registry = YAML.parse(await readFile('../ambassadors/ambassadors.yml', 'utf8')).ambassadors
   assert.ok(registry.length > 0)
   for (const ambassador of registry) {
     assert.ok(ambassador.name)
     assert.ok(ambassador.github_username)
-    assert.ok(ambassador.github_user_id == null || Number.isInteger(ambassador.github_user_id))
+    assert.ok(Number.isSafeInteger(ambassador.github_user_id))
+    assert.ok(ambassador.github_user_id > 0)
     assert.match(ambassador.joined_at, /^\d{4}-\d{2}-\d{2}$/)
     assert.equal(typeof ambassador.socials, 'object')
   }

@@ -64,16 +64,16 @@ If information is missing or invalid, the issue receives `status:needs-informati
 
 A possible duplicate is flagged for a maintainer to review. Evidence that has already been credited cannot create another contribution record.
 
-## GitHub identity: username in, ID resolved automatically
+## GitHub identity: username in, registered ID matched automatically
 
 You only provide your GitHub username. You do **not** enter a numeric GitHub user ID.
 
-When an activity is submitted, automation resolves the username through the GitHub API and stores both:
+When an activity is submitted, automation resolves the username through the GitHub API and matches it to the ID already stored in the ambassador registry. Approved contribution records store both:
 
 - the current `github_username`, used to group and display ambassador activity; and
 - the immutable numeric `github_user_id`, used internally to verify identity and safely follow username changes.
 
-The scheduled identity workflow also backfills missing IDs and refreshes renamed accounts. The numeric ID in [ambassadors/ambassadors.yml](ambassadors/ambassadors.yml) is automation-managed and must be left `null` when a new ambassador is registered.
+When registering an ambassador, a maintainer resolves and records the numeric ID once. Registry validation requires a positive integer and rejects duplicate usernames or IDs; no scheduled workflow rewrites ambassador identities.
 
 ## Review statuses
 
@@ -91,13 +91,13 @@ The record pull request itself carries `contribution-record` and `status:approve
 Registered ambassador profiles live in [ambassadors/ambassadors.yml](ambassadors/ambassadors.yml). A profile can contain:
 
 - display name and current GitHub username;
-- automation-managed GitHub user ID;
+- maintainer-resolved GitHub user ID;
 - program status and joining date;
 - role, location, timezone, pronouns, and short bio;
 - interests and languages; and
 - GitHub, LinkedIn, X, Bluesky, and website links.
 
-Ambassadors may propose updates to their public profile details through a pull request. Leave `github_user_id` unchanged; automation owns that field. New program membership and status changes require maintainer approval.
+Ambassadors may propose updates to their public profile details through a pull request. The immutable `github_user_id` should only change when a maintainer corrects a registration error. New program membership and status changes require maintainer approval.
 
 ## Dashboard
 
@@ -119,7 +119,7 @@ No. Submit accurate activity details and evidence only. An authorized maintainer
 
 ### Do I need to find my numeric GitHub ID?
 
-No. Enter only your current GitHub username. The GitHub API resolves the immutable numeric ID automatically.
+No. Enter only your current GitHub username. Submission validation resolves it and checks it against the immutable numeric ID already registered by a maintainer.
 
 ### Can I submit work that is still in progress?
 
@@ -131,7 +131,7 @@ No. The workflow checks the central record and other validated issues for duplic
 
 ### What if I change my GitHub username?
 
-The identity workflow uses your immutable GitHub user ID to discover and store the current username, while keeping your activity history together.
+Ask a program maintainer to update your username and GitHub profile link in the registry. Your immutable GitHub user ID stays the same, keeping your activity history together.
 
 ### Why is my submission asking for more information?
 
@@ -139,7 +139,7 @@ Read the validation comment, edit the original issue with the requested details,
 
 ## For program maintainers
 
-Maintainers register ambassadors in [ambassadors/ambassadors.yml](ambassadors/ambassadors.yml), authorize reviewers in [config/reviewers.yml](config/reviewers.yml), and manage program policy in [config](config). To add an ambassador, enter their profile and current GitHub username with `github_user_id: null`; the identity workflow fills the ID through the GitHub API.
+Maintainers register ambassadors in [ambassadors/ambassadors.yml](ambassadors/ambassadors.yml), authorize reviewers in [config/reviewers.yml](config/reviewers.yml), and manage program policy in [config](config). To add an ambassador, resolve their GitHub account through the GitHub API and enter the returned positive integer as `github_user_id`. This is a one-time registration step; do not leave the field `null`.
 
 An authorized reviewer approves a validated issue with:
 

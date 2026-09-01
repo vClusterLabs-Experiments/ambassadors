@@ -1,8 +1,8 @@
 # Ambassador directory.
 #
-# github_user_id is owned by automation. Leave it null when adding an ambassador;
-# the identity workflow resolves it from github_username through the GitHub API.
-# Do not enter or change a numeric GitHub ID manually.
+# Maintainers must resolve github_user_id from the GitHub API when registering an
+# ambassador. Store the immutable numeric ID once; it remains stable if the
+# ambassador later changes their username.
 ambassadors:
   - name: Hrittik Roy
     github_username: hrittikhere
@@ -33,13 +33,13 @@ ambassadors:
       sessionize: https://sessionize.com/hrittikhere
   - name: George Leonard
     github_username: georgelza
-    github_user_id: null
+    github_user_id: 28488383
     status: active
     joined_at: 2026-06-29
-    role: null
-    location: null
+    role: Technology Architect at PayInc SA
+    location: City of Johannesburg, Gauteng, South Africa
     timezone: null
-    pronouns: null
+    pronouns: he/him
     bio: With more than 30 years of experience across enterprise software, hardware, and consulting, George has worked in a variety of roles and geographies, serving as a trusted advisor to clients and senior IT leaders. He specializes in full stack solution architecture and cloud solutions, contributing to initiatives including South Africa’s PayShap real-time payments platform, Standard Bank’s database cloud solution, MTN’s BI in a Box, and IAMZA’s national digital identity initiative. Passionate about continuous learning, he thrives on applying emerging technologies to solve complex business challenges.
     interests:
       - Full stack solution architecture
