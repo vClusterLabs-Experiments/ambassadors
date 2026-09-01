@@ -31,3 +31,30 @@ ambassadors:
       website: https://hrittikhere.com/
       credly: https://www.credly.com/users/hrittikhere
       sessionize: https://sessionize.com/hrittikhere
+  - name: George Leonard
+    github_username: georgelza
+    github_user_id: null
+    status: active
+    joined_at: 2026-06-29
+    role: null
+    location: null
+    timezone: null
+    pronouns: null
+    bio: With more than 30 years of experience across enterprise software, hardware, and consulting, George has worked in a variety of roles and geographies, serving as a trusted advisor to clients and senior IT leaders. He specializes in full stack solution architecture and cloud solutions, contributing to initiatives including South Africa’s PayShap real-time payments platform, Standard Bank’s database cloud solution, MTN’s BI in a Box, and IAMZA’s national digital identity initiative. Passionate about continuous learning, he thrives on applying emerging technologies to solve complex business challenges.
+    interests:
+      - Full stack solution architecture
+      - Cloud solutions
+      - Enterprise software
+      - Real-time payments
+      - Business intelligence
+      - Digital identity
+      - Emerging technologies
+    languages: []
+    socials:
+      github: https://github.com/georgelza
+      linkedin: https://www.linkedin.com/in/george-leonard-945b502/
+      x: null
+      bluesky: null
+      website: null
+      credly: null
+      sessionize: null
