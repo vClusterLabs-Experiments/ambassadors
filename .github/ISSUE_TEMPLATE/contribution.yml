@@ -10,7 +10,7 @@ body:
       value: |
         Thanks for contributing to the vCluster community. Automation validates this submission, but only an authorized maintainer can decide and approve points.
 
-        Enter only your current GitHub username below. Your immutable numeric GitHub user ID is resolved automatically through the GitHub API and is never entered manually.
+        Enter only your current GitHub username below. Validation resolves it through the GitHub API and matches it to the immutable numeric ID already recorded by a program maintainer.
 
   - type: input
     id: github_username

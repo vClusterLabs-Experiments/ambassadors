@@ -53,11 +53,22 @@ for (const record of ledger.contributions ?? []) {
   }
 }
 
+const ambassadorUsernames = new Set()
+const ambassadorUserIds = new Set()
 for (const ambassador of registry.ambassadors ?? []) {
   if (!ambassador.name?.trim()) errors.push('Every ambassador requires a name.')
   if (!ambassador.github_username) errors.push('Every ambassador requires github_username.')
-  if (ambassador.github_user_id != null && !Number.isInteger(ambassador.github_user_id)) {
-    errors.push('An automatically resolved github_user_id must be numeric.')
+  const normalizedUsername = ambassador.github_username?.toLowerCase()
+  if (normalizedUsername && ambassadorUsernames.has(normalizedUsername)) {
+    errors.push(`Duplicate ambassador GitHub username: @${ambassador.github_username}.`)
+  }
+  if (normalizedUsername) ambassadorUsernames.add(normalizedUsername)
+  if (!Number.isSafeInteger(ambassador.github_user_id) || ambassador.github_user_id <= 0) {
+    errors.push(`@${ambassador.github_username ?? 'unknown'}: github_user_id must be a positive integer resolved by a maintainer.`)
+  } else if (ambassadorUserIds.has(ambassador.github_user_id)) {
+    errors.push(`Duplicate ambassador GitHub user ID: ${ambassador.github_user_id}.`)
+  } else {
+    ambassadorUserIds.add(ambassador.github_user_id)
   }
   if (!['active', 'inactive', 'alumni'].includes(ambassador.status)) {
     errors.push(`@${ambassador.github_username ?? 'unknown'}: status must be active, inactive, or alumni.`)

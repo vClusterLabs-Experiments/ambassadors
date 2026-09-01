@@ -72,11 +72,6 @@ export function findActiveAmbassador(registry, account) {
     (item) => item.github_username.toLowerCase() === account.login.toLowerCase(),
   )
   if (byUsername) {
-    if (byUsername.github_user_id == null) {
-      return byUsername.status === 'active'
-        ? { ambassador: byUsername }
-        : { error: 'This GitHub account is registered, but is not an active ambassador.' }
-    }
     return {
       error: 'The submitted username resolves to a different GitHub user ID than the ambassador registry. A maintainer must update the registry before this submission can proceed.',
     }

@@ -29,9 +29,9 @@ test('ties active registration to immutable GitHub ID', () => {
   assert.match(findActiveAmbassador(registry, { login: 'old-name', id: 99 }).error, /different GitHub user ID/)
 })
 
-test('accepts an active username before automation backfills its GitHub ID', () => {
-  const registry = { ambassadors: [{ github_username: 'test-user', status: 'active' }] }
-  assert.ok(findActiveAmbassador(registry, { login: 'test-user', id: 12345678 }).ambassador)
+test('rejects an active username whose manually registered GitHub ID does not match', () => {
+  const registry = { ambassadors: [{ github_username: 'test-user', github_user_id: 42, status: 'active' }] }
+  assert.match(findActiveAmbassador(registry, { login: 'test-user', id: 12345678 }).error, /different GitHub user ID/)
 })
 
 test('parses approval commands with a required note', () => {

@@ -8,8 +8,9 @@ const ledger = await readYaml('contributions/contributions.yml')
 
 const records = ledger.contributions ?? []
 const ambassadors = registry.ambassadors ?? []
-const registryById = new Map(ambassadors.filter((item) => item.github_user_id != null).map((item) => [String(item.github_user_id), item]))
-// Registered ambassadors keep one card even before identity sync backfills their numeric ID.
+const registryById = new Map(ambassadors.map((item) => [String(item.github_user_id), item]))
+// Username fallback keeps older contribution records grouped correctly if a
+// maintainer updates a registry entry while correcting historical data.
 const registryByUsername = new Map(ambassadors.map((item) => [item.github_username.toLowerCase(), item]))
 const activities = matrix.activity_types ?? {}
 
