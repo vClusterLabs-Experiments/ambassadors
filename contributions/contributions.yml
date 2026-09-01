@@ -29,3 +29,18 @@ contributions:
       reviewer: hrittikhere
       rationale: Published a vCluster blog post introducing NVIDIA Dynamo integration
       approved_at: 2026-08-25T16:30:28Z
+  - id: vc-2026-0010
+    source_issue: 10
+    ambassador:
+      github_username: georgelza
+      github_user_id: 28488383
+    activity:
+      type: blog_post
+      title: Exploring Kubernetes vCluster GitOps Stack
+      date: 2026-09-01
+      evidence_url: https://vcluster.com/blog/exploring-kubernetes-vcluster-gitops-stack
+    scoring:
+      points: 20
+      reviewer: hrittikhere
+      rationale: Published a vCluster blog post introducing and exploring GitOps Stack
+      approved_at: 2026-09-01T07:38:42Z
