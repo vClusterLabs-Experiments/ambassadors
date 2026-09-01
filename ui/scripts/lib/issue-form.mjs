@@ -3,12 +3,9 @@ import YAML from 'yaml'
 export const FORM_FIELDS = {
   'Ambassador GitHub username': 'github_username',
   'Contribution type': 'contribution_type',
-  'Contribution title': 'contribution_title',
   'Completion or publication date': 'completion_date',
   'Evidence URL': 'evidence_url',
   'Contribution summary': 'contribution_summary',
-  'Impact or outcome': 'impact',
-  'Related submission, if applicable': 'related_submission',
 }
 
 export const REQUIRED_FIELDS = Object.values(FORM_FIELDS)

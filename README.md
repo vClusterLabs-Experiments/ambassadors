@@ -25,11 +25,10 @@ The values and ranges in [config/activity-types.yml](config/activity-types.yml) 
 1. Open the [Ambassador contribution form](https://github.com/vClusterLabs-Experiments/ambassadors/issues/new?template=contribution.yml).
 2. Enter your current GitHub username without the `@` symbol.
 3. Select the contribution type that best describes the completed work.
-4. Add a clear title and the completion or publication date in `YYYY-MM-DD` format.
+4. Add the completion or publication date in `YYYY-MM-DD` format.
 5. Provide a public HTTPS evidence URL that a reviewer can open.
-6. Summarize the contribution and describe its impact or outcome.
-7. Link any related submission, or enter `N/A`.
-8. Review the information and submit the issue.
+6. Summarize the contribution and who it was for.
+7. Review the information and submit the issue.
 
 Submit one completed activity per issue. Good evidence should let a reviewer understand what was delivered, when it was completed, and how it benefited the community.
 
@@ -37,12 +36,9 @@ Submit one completed activity per issue. Good evidence should let a reviewer und
 
 - Your registered GitHub username
 - Contribution type
-- Contribution title
 - Completion or publication date
 - Public evidence URL
 - Contribution summary
-- Impact or outcome
-- Related submission, when applicable
 
 The available contribution types include social threads, community help, blog posts, technical videos, tutorials, meetup and conference talks, podcast appearances, livestreams, meetup organization, workshops, courses, and project contributions. The approved program policy is maintained in [config/activity-types.yml](config/activity-types.yml).
 

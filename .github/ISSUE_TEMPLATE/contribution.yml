@@ -44,14 +44,6 @@ body:
       required: true
 
   - type: input
-    id: contribution_title
-    attributes:
-      label: Contribution title
-      placeholder: "From data residency to digital sovereignty"
-    validations:
-      required: true
-
-  - type: input
     id: completion_date
     attributes:
       label: Completion or publication date
@@ -74,22 +66,5 @@ body:
     attributes:
       label: Contribution summary
       description: Explain what you completed and who it was for.
-    validations:
-      required: true
-
-  - type: textarea
-    id: impact
-    attributes:
-      label: Impact or outcome
-      description: Describe the result, reach, feedback, or community benefit.
-    validations:
-      required: true
-
-  - type: input
-    id: related_submission
-    attributes:
-      label: Related submission, if applicable
-      description: Link a related issue or enter N/A when there is none.
-      placeholder: N/A
     validations:
       required: true

@@ -48,8 +48,12 @@ if (form.evidence_url) {
   const error = validateEvidenceUrl(form.evidence_url)
   if (error) problems.push(error)
 }
-if (form.contribution_title?.includes('-->')) {
-  problems.push('Contribution title contains unsupported markup.')
+const contributionTitle = (issue.title ?? '').replace(/^\[Contribution\]:\s*/i, '').trim()
+if (!contributionTitle) {
+  problems.push('The issue title must describe the contribution.')
+}
+if (contributionTitle.includes('-->')) {
+  problems.push('The issue title contains unsupported markup.')
 }
 
 const activity = activityConfig.activity_types?.[form.contribution_type]
@@ -105,7 +109,7 @@ if (valid) {
     },
     activity: {
       type: form.contribution_type,
-      title: form.contribution_title,
+      title: contributionTitle,
       date: form.completion_date,
       evidence_url: form.evidence_url,
     },

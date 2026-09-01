@@ -12,10 +12,6 @@ const body = `### Ambassador GitHub username
 
 tutorial - Tutorial
 
-### Contribution title
-
-Designing tenant clusters
-
 ### Completion or publication date
 
 2026-08-20
@@ -26,15 +22,7 @@ https://docs.test/tutorial
 
 ### Contribution summary
 
-A complete tutorial.
-
-### Impact or outcome
-
-Readers can reproduce the examples.
-
-### Related submission, if applicable
-
-N/A`
+A complete tutorial.`
 
 const activityTypes = {
   tutorial: { label: 'Tutorial' },
@@ -46,7 +34,7 @@ test('parses stable issue form headings and contribution key', () => {
   assert.equal(form.github_username, '@test-user')
   assert.equal(form.contribution_type, 'tutorial')
   assert.equal(form.completion_date, '2026-08-20')
-  assert.equal(form.related_submission, 'N/A')
+  assert.equal(form.contribution_summary, 'A complete tutorial.')
 })
 
 test('maps a human-readable contribution label to its stable key', () => {
