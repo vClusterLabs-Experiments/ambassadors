@@ -64,17 +64,6 @@ If information is missing or invalid, the issue receives `status:needs-informati
 
 A possible duplicate is flagged for a maintainer to review. Evidence that has already been credited cannot create another contribution record.
 
-## GitHub identity: username in, registered ID matched automatically
-
-You only provide your GitHub username. You do **not** enter a numeric GitHub user ID.
-
-When an activity is submitted, automation resolves the username through the GitHub API and matches it to the ID already stored in the ambassador registry. Approved contribution records store both:
-
-- the current `github_username`, used to group and display ambassador activity; and
-- the immutable numeric `github_user_id`, used internally to verify identity and safely follow username changes.
-
-When registering an ambassador, a maintainer resolves and records the numeric ID once. Registry validation requires a positive integer and rejects duplicate usernames or IDs; no scheduled workflow rewrites ambassador identities.
-
 ## Review statuses
 
 | Status | Meaning |
