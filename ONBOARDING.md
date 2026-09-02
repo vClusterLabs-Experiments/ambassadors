@@ -43,17 +43,6 @@ The required profile fields are `name`, `github_username`, `github_user_id`, `st
 
 Do not change `github_user_id` after registration; automation owns that field. Membership status changes (`active`, `inactive`, or `alumni`) also require maintainer approval.
 
-### Validate your profile locally
-
-The project requires Node.js 22 or newer. From the repository root, run:
-
-```bash
-cd ui
-npm ci
-npm run validate:data
-npm test
-```
-
 ## Submit an activity
 
 You must be registered as an active ambassador before submitting an activity. Submit only completed or published work, and create one issue per activity.
