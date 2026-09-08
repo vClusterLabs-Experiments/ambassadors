@@ -58,3 +58,29 @@ ambassadors:
       website: null
       credly: null
       sessionize: null
+  - name: Aditya Soni
+    github_username: adityasonittyl
+    github_user_id: null # Managed by automation
+    status: active
+    joined_at: 2026-01-02 # YYYY-MM-DD
+    role: Senior SRE
+    location: Bengaluru, India
+    timezone: Asia/Kolkata
+    pronouns: null
+    bio: Building where infrastructure meets AI | Crafting Cloud and AI-Native Platforms
+    interests:
+      - Platform Engineering
+      - Kubernetes
+      - Security 
+      - AI Infrastructure
+    languages:
+      - English
+      - Hindi
+    socials:
+      github: https://github.com/adityasonittyl
+      linkedin: https://www.linkedin.com/in/adityasonittyl/
+      x: https://x.com/adityasonittyl
+      bluesky: null
+      website: null
+      credly: null
+      sessionize: https://sessionize.com/adityasonittyl/
