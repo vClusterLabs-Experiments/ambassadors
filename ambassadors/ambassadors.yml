@@ -84,3 +84,27 @@ ambassadors:
       website: null
       credly: null
       sessionize: https://sessionize.com/adityasonittyl/
+  - name: Rajani Ekunde
+    github_username: rajani103
+    github_user_id: null # Managed by automation
+    status: active
+    joined_at: 2025-12-19
+    role: Senior Site Reliability Engineer
+    location: Bengaluru, India
+    timezone: Asia/Kolkata
+    pronouns: she/her
+    bio: Rajani is a Senior Site Reliability Engineer, where she designs and operates cloud infrastructure that stays reliable under real-world load. Over 5+ years across SRE, platform engineering, and DevOps roles, she's worked deep in Kubernetes, Docker, AWS, and Terraform, automating the repetitive parts and making systems easier for other engineers to build on. She's a Google Developer Expert for Google Cloud, a Docker Captain, and a Women Techmakers Ambassador, and speaks internationally on containers, cloud-native infrastructure, observability.
+    interests:
+      - AI-powered SRE systems
+      - Observability
+      - eBPF
+    languages:
+      - English
+    socials:
+      github: https://github.com/rajani103
+      linkedin: https://www.linkedin.com/in/rajani103/
+      x: https://x.com/misalpavv
+      bluesky: null
+      website: null
+      credly: https://www.credly.com/users/rajani-ekunde.71169eff
+      sessionize: https://sessionize.com/rajani103/
