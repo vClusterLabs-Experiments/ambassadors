@@ -71,7 +71,7 @@ ambassadors:
     interests:
       - Platform Engineering
       - Kubernetes
-      - Security 
+      - Security
       - AI Infrastructure
     languages:
       - English
@@ -86,7 +86,7 @@ ambassadors:
       sessionize: https://sessionize.com/adityasonittyl/
   - name: Rajani Ekunde
     github_username: rajani103
-    github_user_id: null # Managed by automation
+    github_user_id: 43741838 # Managed by automation
     status: active
     joined_at: 2025-12-19
     role: Senior Site Reliability Engineer
