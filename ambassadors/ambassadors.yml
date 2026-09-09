@@ -60,7 +60,7 @@ ambassadors:
       sessionize: null
   - name: Aditya Soni
     github_username: adityasonittyl
-    github_user_id: null # Managed by automation
+    github_user_id: 39667294 # Managed by automation
     status: active
     joined_at: 2026-01-02 # YYYY-MM-DD
     role: Senior SRE
