@@ -64,7 +64,7 @@ for (const ambassador of registry.ambassadors ?? []) {
   }
   if (normalizedUsername) ambassadorUsernames.add(normalizedUsername)
   if (!Number.isSafeInteger(ambassador.github_user_id) || ambassador.github_user_id <= 0) {
-    errors.push(`@${ambassador.github_username ?? 'unknown'}: github_user_id must be a positive integer resolved by a maintainer.`)
+    errors.push(`@${ambassador.github_username ?? 'unknown'}: github_user_id must be a positive integer resolved by automation.`)
   } else if (ambassadorUserIds.has(ambassador.github_user_id)) {
     errors.push(`Duplicate ambassador GitHub user ID: ${ambassador.github_user_id}.`)
   } else {
