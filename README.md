@@ -80,7 +80,7 @@ The record pull request itself carries `contribution-record` and `status:approve
 Registered ambassador profiles live in [ambassadors/ambassadors.yml](ambassadors/ambassadors.yml). A profile can contain:
 
 - display name and current GitHub username;
-- maintainer-resolved GitHub user ID;
+- automation-resolved GitHub user ID;
 - program status and joining date;
 - role, location, timezone, pronouns, and short bio;
 - interests and languages; and
@@ -128,10 +128,10 @@ Read the validation comment, edit the original issue with the requested details,
 
 ## For program maintainers
 
-The contribution data validation workflow resolves missing (`null` or omitted) ambassador GitHub IDs through the GitHub API before running checks. Lookup failures fail the check; existing IDs are left unchanged. Resolution updates only the CI checkout and does not commit IDs back to the registry. To save an ID locally, run `GH_TOKEN=... GITHUB_REPOSITORY=owner/repo node scripts/sync-identities.mjs --missing-only --strict` from `ui`, then include the registry change in your PR.
+The contribution data validation workflow resolves missing (`null` or omitted) ambassador GitHub IDs through the GitHub API before running checks. Lookup failures fail the check; existing IDs are left unchanged. PR checks resolve IDs in their temporary checkout. After a registration merges into `main`, a separate job resolves and validates the latest registry, then commits the IDs directly to `main` as `github-actions[bot]`. This also handles registrations from fork PRs. No commit is created when all IDs are already present. Maintainers can rerun this process using **Run workflow** on **Validate contribution data** with the `main` branch. Dashboard deployment resolves missing IDs independently so it does not depend on the timing of the saved-ID commit.
 
 
-Maintainers register ambassadors in [ambassadors/ambassadors.yml](ambassadors/ambassadors.yml), authorize reviewers in [config/reviewers.yml](config/reviewers.yml), and manage program policy in [config](config). To add an ambassador, resolve their GitHub account through the GitHub API and enter the returned positive integer as `github_user_id`. This is a one-time registration step; do not leave the field `null`.
+Maintainers register ambassadors in [ambassadors/ambassadors.yml](ambassadors/ambassadors.yml), authorize reviewers in [config/reviewers.yml](config/reviewers.yml), and manage program policy in [config](config). To add an ambassador, enter their current GitHub username and set `github_user_id: null`; automation saves the resolved ID after merge.
 
 An authorized reviewer approves a validated issue with:
 

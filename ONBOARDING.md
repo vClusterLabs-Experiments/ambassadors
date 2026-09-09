@@ -8,7 +8,7 @@ Program membership is approved by a vCluster program maintainer. Adding a profil
 
 1. Fork this repository and create a branch for your profile.
 2. Add a new entry under `ambassadors` in [`ambassadors/ambassadors.yml`](ambassadors/ambassadors.yml).
-3. Set `github_user_id` to `null`. After the profile is merged, automation resolves the immutable numeric ID from your username. Do not enter the ID manually.
+3. Set `github_user_id` to `null`. After the profile is merged, automation resolves the immutable numeric ID from your username and commits it to `ambassadors/ambassadors.yml` on `main`. Do not enter the ID manually.
 4. Open a pull request with your profile change. A maintainer will review the membership and profile before it is merged.
 
 Use this profile template and replace every example value with your information:
