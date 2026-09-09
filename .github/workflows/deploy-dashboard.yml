@@ -4,6 +4,7 @@ on:
   push:
     branches: [main]
     paths:
+      - .github/workflows/deploy-dashboard.yml
       - ambassadors/**
       - config/**
       - contributions/**
@@ -34,6 +35,10 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
+      - name: Resolve missing GitHub user IDs
+        run: node scripts/sync-identities.mjs --missing-only --strict
+        env:
+          GH_TOKEN: ${{ github.token }}
       - run: npm run validate:data
       - run: npm run build
       - run: npm run verify:pages
