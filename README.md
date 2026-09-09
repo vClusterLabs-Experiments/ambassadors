@@ -128,6 +128,9 @@ Read the validation comment, edit the original issue with the requested details,
 
 ## For program maintainers
 
+The contribution data validation workflow resolves missing (`null` or omitted) ambassador GitHub IDs through the GitHub API before running checks. Lookup failures fail the check; existing IDs are left unchanged. Resolution updates only the CI checkout and does not commit IDs back to the registry. To save an ID locally, run `GH_TOKEN=... GITHUB_REPOSITORY=owner/repo node scripts/sync-identities.mjs --missing-only --strict` from `ui`, then include the registry change in your PR.
+
+
 Maintainers register ambassadors in [ambassadors/ambassadors.yml](ambassadors/ambassadors.yml), authorize reviewers in [config/reviewers.yml](config/reviewers.yml), and manage program policy in [config](config). To add an ambassador, resolve their GitHub account through the GitHub API and enter the returned positive integer as `github_user_id`. This is a one-time registration step; do not leave the field `null`.
 
 An authorized reviewer approves a validated issue with:
