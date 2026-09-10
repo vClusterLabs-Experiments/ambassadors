@@ -17,6 +17,7 @@ Use this profile template and replace every example value with your information:
   - name: Your Name
     github_username: your-github-username
     github_user_id: null # Managed by automation
+    image_url: null # Optional public image URL
     status: active
     joined_at: 2026-09-02 # YYYY-MM-DD
     role: Your role or title
@@ -39,7 +40,7 @@ Use this profile template and replace every example value with your information:
       sessionize: null
 ```
 
-The required profile fields are `name`, `github_username`, `github_user_id`, `status`, `joined_at`, and the `socials` object. New profiles must include `github_user_id: null`; automation replaces it with the resolved numeric ID after registration. Use `null` for another optional value you do not want to provide and `[]` for an empty list. All profile information is public on the ambassador dashboard, so include only details you are comfortable sharing.
+The required profile fields are `name`, `github_username`, `github_user_id`, `status`, `joined_at`, and the `socials` object. New profiles must include `github_user_id: null`; automation replaces it with the resolved numeric ID after registration. `image_url` may contain a publicly accessible profile-image URL or be left as `null`. Use `null` for another optional value you do not want to provide and `[]` for an empty list. All profile information is public on the ambassador dashboard, so include only details you are comfortable sharing.
 
 Do not change `github_user_id` after registration; automation owns that field. Membership status changes (`active`, `inactive`, or `alumni`) also require maintainer approval.
 
