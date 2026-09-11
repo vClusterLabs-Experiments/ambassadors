@@ -118,7 +118,7 @@ ambassadors:
     location: Chicago, IL, USA
     timezone: America/Chicago
     pronouns: he/him
-    bio: Pavan is a Senior Cloud Platform Engineer at W.W. Grainger, where he runs the Kubernetes platforms behind a Fortune 500 company's workloads. In the CNCF he is the elected Tech Lead of TAG Workloads Foundation for the 2026 to 2028 term and leads the TOC's Distributed Agentic Systems initiative. He also contributes to Dragonfly, a graduated CNCF project, writes for the CNCF and AAIF blogs about AI infrastructure, model distribution, and agentic systems, and is a CNCF Golden Kubestronaut.
+    bio: Pavan is a Senior Cloud Platform Engineer at W.W. Grainger, where he runs the Kubernetes platforms behind a Fortune 500 company's workloads. In the CNCF he is the elected Tech Lead of TAG Workloads Foundation for the 2026 to 2028 term and leads the TOC's Distributed Agentic Systems initiative. He also contributes to Dragonfly, a graduated CNCF project, writes for the CNCF and AAIF blogs about AI infrastructure, model distribution, and agentic systems, and is a CNCF Golden Kubestronaut. He speaks at Linux Foundation and CNCF events on GPU infrastructure, Kubernetes, and agentic systems, including HPSFCon 2026, KyvernoCon 2026, and KubeCon + CloudNativeCon North America 2026.
     interests:
       - Kubernetes
       - AI infrastructure
