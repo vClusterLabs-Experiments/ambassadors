@@ -108,3 +108,31 @@ ambassadors:
       website: null
       credly: https://www.credly.com/users/rajani-ekunde.71169eff
       sessionize: https://sessionize.com/rajani103/
+  - name: Pavan Madduri
+    github_username: pmady
+    github_user_id: null # Managed by automation
+    image_url: null
+    status: active
+    joined_at: 2026-09-11
+    role: Senior Cloud Platform Engineer at W.W. Grainger; Tech Lead, CNCF TAG Workloads Foundation
+    location: Chicago, IL, USA
+    timezone: America/Chicago
+    pronouns: he/him
+    bio: Pavan is a Senior Cloud Platform Engineer at W.W. Grainger, where he runs the Kubernetes platforms behind a Fortune 500 company's workloads. In the CNCF he is the elected Tech Lead of TAG Workloads Foundation for the 2026 to 2028 term and leads the TOC's Distributed Agentic Systems initiative. He also contributes to Dragonfly, a graduated CNCF project, writes for the CNCF and AAIF blogs about AI infrastructure, model distribution, and agentic systems, and is a CNCF Golden Kubestronaut.
+    interests:
+      - Kubernetes
+      - AI infrastructure
+      - GPU workloads
+      - Multi-tenancy
+      - Workload scheduling
+      - Platform engineering
+    languages:
+      - English
+    socials:
+      github: https://github.com/pmady
+      linkedin: https://www.linkedin.com/in/pavanmadduri/
+      x: https://x.com/pavanmadduri27
+      bluesky: https://bsky.app/profile/pavanmadduri.bsky.social
+      website: https://pmady.github.io/
+      credly: https://www.credly.com/users/pavan-madduri.2f163cf7
+      sessionize: https://sessionize.com/pavan-madduri/
