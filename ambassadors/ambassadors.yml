@@ -110,7 +110,7 @@ ambassadors:
       sessionize: https://sessionize.com/rajani103/
   - name: Pavan Madduri
     github_username: pmady
-    github_user_id: null # Managed by automation
+    github_user_id: 15876315 # Managed by automation
     image_url: null
     status: active
     joined_at: 2026-09-11
