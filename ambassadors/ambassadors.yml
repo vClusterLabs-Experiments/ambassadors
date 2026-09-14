@@ -136,3 +136,33 @@ ambassadors:
       website: https://pmady.github.io/
       credly: https://www.credly.com/users/pavanmadduri
       sessionize: https://sessionize.com/pavanmadduri/
+  - name: Samaresh Kumar Singh
+    github_username: ssam18
+    github_user_id: null # Managed by automation
+    image_url: null
+    status: active
+    joined_at: 2026-09-12
+    role: Principal Engineer at HP Inc.
+    location: Austin, TX, USA
+    timezone: America/Chicago
+    pronouns: He/Him
+    bio: Samaresh Kumar Singh is a Principal Engineer at HP Inc. with 22+ years of experience in distributed systems, AI/ML infrastructure, Kubernetes, cloud-native platforms, and edge computing. He works on scalable platform architecture, GPU orchestration, distributed caching, and AI infrastructure, with a focus on reliability, performance, and multi-environment deployments. As an open-source contributor, speaker, researcher, and mentor, he is passionate about Kubernetes platform engineering and the evolving intersection of Kubernetes and AI infrastructure.
+    interests:
+      - Kubernetes
+      - Edge AI
+      - Workflow scheduling and execution
+      - Agentic AI
+      - Security
+      - Inferencing
+      - Multi-tenancy
+      - GPU/TPU/NPU orchestration
+    languages:
+      - English
+    socials:
+      github: https://github.com/ssam18
+      linkedin: https://www.linkedin.com/in/samaresh-singh-9772ba23/
+      x: null
+      bluesky: null
+      website: null
+      credly: null
+      sessionize: null
