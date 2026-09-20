@@ -166,3 +166,37 @@ ambassadors:
       website: null
       credly: null
       sessionize: null
+  - name: Artem Lajko
+    github_username: la-cc
+    github_user_id: #TODO
+    image_url: null
+    status: active
+    joined_at: 2026-01-01
+    role: Head of Platform Engineering at iits-consulting
+    location: Hamburg, Germany
+    timezone: Europe/Berlin
+    pronouns: he/him
+    bio: Artem Lajko, certified CNCF Kubestronaut and Head of Platform Engineering, specializes in Kubernetes scalability and GitOps-driven workflows. He is the author of Implementing GitOps with Kubernetes and an IT freelancer writing for various publishers. As a Platform Engineering Ambassador, he supports companies and the community in adopting Platform Engineering, Internal Developer Platforms, and related technologies. Passionate about Open Source, he helps organizations choose the right tools, driving tech adoption and innovation.
+    interests:
+      - GitOps
+      - Platform engineering
+      - Kubernetes
+      - Multi-tenancy
+      - Developer experience
+      - Scale and load testing
+      - Open Source
+      - Content Creation
+      - Public Speaking
+      - AI infrastructure
+    languages:
+      - English
+      - German
+      - Russian
+    socials:
+      github: https://github.com/la-cc
+      linkedin: https://www.linkedin.com/in/lajko/
+      x: null
+      bluesky: null
+      website: null
+      credly: https://www.credly.com/users/artem-lajko
+      sessionize: https://sessionize.com/artem-lajko/
