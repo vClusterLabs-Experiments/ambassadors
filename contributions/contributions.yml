@@ -1,4 +1,21 @@
 contributions:
+  - id: vc-2026-0026
+    source_issue: 26
+    ambassador:
+      github_username: la-cc
+      github_user_id: 110809333
+    activity:
+      type: course
+      title: "Free course: GitOps for Platform Engineering (Platform Engineering University) — vCluster for multi-tenancy"
+      date: 2026-02-01
+      evidence_url: https://university.platformengineering.org/introduction-to-gitops-for-platform-engineering
+    scoring:
+      points: 35
+      reviewer: hrittikhere
+      rationale: |-
+        Co-led the full-day Kubernetes Platform Blueprint workshop at KubeCon EU 2026 Amsterdam,
+          presenting vind and vCluster Platform with remote GPU nodes
+      approved_at: 2026-09-22T04:56:42Z
   - id: vc-2026-0023
     source_issue: 23
     ambassador:
