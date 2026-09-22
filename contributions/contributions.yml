@@ -14,6 +14,21 @@ contributions:
       reviewer: hrittikhere
       rationale: Published an in-depth CNCF technical guide to architectural patterns for cloud native digital sovereignty using tenant clusters and vCluster.
       approved_at: 2026-08-25T14:55:33Z
+  - id: vc-2026-0022
+    source_issue: 22
+    ambassador:
+      github_username: la-cc
+      github_user_id: 110809333
+    activity:
+      type: blog_post
+      title: "Blog post: GitOps for 15,000+ Clusters — What Large-Scale Testing with vCluster Taught Us"
+      date: 2026-06-29
+      evidence_url: https://medium.com/itnext/gitops-for-15-000-clusters-what-large-scale-testing-with-vcluster-taught-us-41e4b0d43e0b
+    scoring:
+      points: 30
+      reviewer: hrittikhere
+      rationale: Published a vCluster blog post on Large-Scale Testing with vCluster
+      approved_at: 2026-09-22T04:52:31Z
   - id: vc-2026-0005
     source_issue: 5
     ambassador:
