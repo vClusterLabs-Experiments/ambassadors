@@ -31,6 +31,23 @@ contributions:
       reviewer: hrittikhere
       rationale: Published a vCluster in Docker (vind) blog post
       approved_at: 2026-09-22T04:53:34Z
+  - id: vc-2026-0024
+    source_issue: 24
+    ambassador:
+      github_username: la-cc
+      github_user_id: 110809333
+    activity:
+      type: workshop
+      title: Kubernetes Platform Blueprint — From Multitenancy to AI Infrastructure (vCluster, KubeCon EU 2026 Amsterdam)
+      date: 2026-03-23
+      evidence_url: https://www.vcluster.com/events/kubernetes-platform-blueprint
+    scoring:
+      points: 50
+      reviewer: hrittikhere
+      rationale: |-
+        Created the free GitOps for Platform Engineering course on Platform Engineering University,
+          with a vCluster-based tenant isolation module
+      approved_at: 2026-09-22T04:56:24Z
   - id: vc-2026-0001
     source_issue: 1
     ambassador:
