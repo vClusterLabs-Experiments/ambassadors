@@ -166,6 +166,36 @@ ambassadors:
       website: null
       credly: null
       sessionize: null
+  - name: Sagar Utekar
+    github_username: Sagar2366
+    github_user_id: null
+    image_url: null
+    status: active
+    joined_at: 2026-09-17
+    role: Senior Site Reliability Engineer at CrowdStrike
+    location: Pune, India
+    timezone: Asia/Kolkata
+    pronouns: he/him
+    bio: Senior Site Reliability Engineer specializing in cloud-native infrastructure and Kubernetes. CNCF Ambassador, Docker Captain, and Golden Kubestronaut passionate about building platforms and guiding dev communities.
+    interests:
+      - Kubernetes
+      - Site Reliability Engineering
+      - Cloud-Native Platforms
+      - Platform Engineering
+      - Open Source
+      - DevOps
+    languages:
+      - English
+      - Hindi
+      - Marathi
+    socials:
+      github: https://github.com/Sagar2366
+      linkedin: https://www.linkedin.com/in/sagar-utekar
+      x: https://x.com/me_sagar_utekar
+      bluesky: null
+      website: null
+      credly: https://www.credly.com/users/sagar-utekar
+      sessionize: https://sessionize.com/sagar-utekar/
   - name: Artem Lajko
     github_username: la-cc
     github_user_id: 110809333 #TODO
