@@ -1,4 +1,19 @@
 contributions:
+  - id: vc-2026-0023
+    source_issue: 23
+    ambassador:
+      github_username: la-cc
+      github_user_id: 110809333
+    activity:
+      type: blog_post
+      title: vCluster in Docker (vind) — Building and Sharing Local Kubernetes Developer Environments
+      date: 2026-02-25
+      evidence_url: https://medium.com/itnext/vcluster-in-docker-has-changed-the-way-we-build-and-share-local-kubernetes-developer-environments-d4d8f4c57406
+    scoring:
+      points: 20
+      reviewer: hrittikhere
+      rationale: Published a vCluster in Docker (vind) blog post
+      approved_at: 2026-09-22T04:53:34Z
   - id: vc-2026-0001
     source_issue: 1
     ambassador:
