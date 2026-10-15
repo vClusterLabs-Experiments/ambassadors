@@ -260,3 +260,34 @@ ambassadors:
       website: null
       credly: https://www.credly.com/users/artem-lajko
       sessionize: https://sessionize.com/artem-lajko/
+  - name: Walid Dridi
+    github_username: dridi-walid
+    github_user_id: null # Managed by automation
+    image_url: null
+    status: active
+    joined_at: 2026-10-14
+    role: Platform Architect, Kubernetes Expert & Trainer at STRIVLY (Independent)
+    location: Paris, France
+    timezone: Europe/Paris
+    pronouns: he/him
+    bio: Walid Dridi, Platform Architect & Kubernetes Expert, specializes in designing distributed systems, container orchestration, and resilient cloud-native infra. He builds Kubernetes platforms from cloud to bare metal to the edge, with a focus on Cluster API and GitOps.
+    interests:
+      - Kubernetes
+      - Platform engineering
+      - Multi-tenancy
+      - Training
+      - AI infrastructure
+      - Edge Computing
+      - Agentic AI SRE
+    languages:
+      - English
+      - French
+      - Arabic
+    socials:
+      github: https://github.com/dridi-walid
+      linkedin: https://www.linkedin.com/in/walid-dridi-strivly
+      x: null
+      bluesky: https://bsky.app/profile/wdridi.bsky.social
+      website: https://www.strivly.co
+      credly: https://www.credly.com/users/walid-dridi
+      sessionize: https://sessionize.com/walid-dridi
