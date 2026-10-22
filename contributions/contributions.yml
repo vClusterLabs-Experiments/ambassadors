@@ -108,21 +108,6 @@ contributions:
       reviewer: hrittikhere
       rationale: Published a vCluster blog post introducing and exploring GitOps Stack
       approved_at: 2026-09-01T07:38:42Z
-  - id: vc-2026-0033
-    source_issue: 33
-    ambassador:
-      github_username: pmady
-      github_user_id: 15876315
-    activity:
-      type: blog_post
-      title: "One Model, Many Tenants: Testing a Shared P2P Cache Across Virtual Kubernetes Clusters"
-      date: 2026-10-08
-      evidence_url: https://cloudnativenow.com/contributed-content/one-model-many-tenants-testing-a-shared-p2p-cache-across-virtual-kubernetes-clusters/
-    scoring:
-      points: 15
-      reviewer: hrittikhere
-      rationale: Published technical write-up explaining the architecture, evidence, and practical lessons.
-      approved_at: 2026-10-15T02:29:35Z
   - id: vc-2026-0031
     source_issue: 31
     ambassador:
@@ -138,3 +123,33 @@ contributions:
       reviewer: hrittikhere
       rationale: Published a reproducible Dragonfly and vCluster tutorial with pinned configuration, manifests, checksums, transfer evidence, limitations, and cleanup.
       approved_at: 2026-10-15T02:28:18Z
+  - id: vc-2026-0033
+    source_issue: 33
+    ambassador:
+      github_username: pmady
+      github_user_id: 15876315
+    activity:
+      type: blog_post
+      title: "One Model, Many Tenants: Testing a Shared P2P Cache Across Virtual Kubernetes Clusters"
+      date: 2026-10-08
+      evidence_url: https://cloudnativenow.com/contributed-content/one-model-many-tenants-testing-a-shared-p2p-cache-across-virtual-kubernetes-clusters/
+    scoring:
+      points: 15
+      reviewer: hrittikhere
+      rationale: Published technical write-up explaining the architecture, evidence, and practical lessons.
+      approved_at: 2026-10-15T02:29:35Z
+  - id: vc-2026-0038
+    source_issue: 38
+    ambassador:
+      github_username: georgelza
+      github_user_id: 28488383
+    activity:
+      type: tutorial
+      title: Local TLS Registry vCluster
+      date: 2026-10-22
+      evidence_url: https://vcluster.com/blog/local-tls-registry-vcluster
+    scoring:
+      points: 20
+      reviewer: hrittikhere
+      rationale: Published a post on how to get tenant cluster nodes to pull from a local registry that uses a self-signed certificate, and includes a reproducible lab you can run yourself.
+      approved_at: 2026-10-22T11:52:58Z
