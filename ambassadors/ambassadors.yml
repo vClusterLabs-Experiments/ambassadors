@@ -291,3 +291,37 @@ ambassadors:
       website: https://www.strivly.co
       credly: https://www.credly.com/users/walid-dridi
       sessionize: https://sessionize.com/walid-dridi
+  - name: Eleni Grosdouli
+    github_username: egrosdou01
+    github_user_id: null
+    image_url: null
+    status: active
+    joined_at: 2026-09-10
+    role: DevOps Consulting Engineer at Cisco Systems
+    location: Berlin, Germany
+    timezone: Europe/Berlin
+    pronouns: she/her
+    bio: Eleni is your go-to DevOps and GitOps expert, passionate about networking, security, and endpoint management. As a DevOps Consulting Engineer at Cisco Systems, she brings hands-on experience across diverse technical domains. A lifelong learner, Eleni loves experimenting with cutting-edge technology in her home lab and sharing her discoveries through blog posts.
+    interests:
+      - DevOps
+      - GitOps
+      - Platform Engineering
+      - Kubernetes
+      - Fleet Management
+      - Multi-tenancy
+      - Networking
+      - Open Source
+      - Content Creation
+      - Public Speaking
+    languages:
+      - English
+      - German
+      - Greek
+    socials:
+      github: https://github.com/egrosdou01
+      linkedin: https://www.linkedin.com/in/eleni-grosdouli-85a1a5116/
+      x: null
+      bluesky: null
+      website: https://blog.grosdouli.dev
+      credly: https://www.credly.com/users/eleni-grosdouli/
+      sessionize: https://sessionize.com/eleni-grosdouli/
