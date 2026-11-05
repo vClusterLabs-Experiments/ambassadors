@@ -63,6 +63,21 @@ contributions:
       reviewer: hrittikhere
       rationale: Published part 1 of a hands-on series on deploying vCluster with Helm, including node assignment with taints, tolerations, and labels
       approved_at: 2026-11-05T06:58:22Z
+  - id: vc-2026-0042
+    source_issue: 42
+    ambassador:
+      github_username: egrosdou01
+      github_user_id: 147995681
+    activity:
+      type: blog_post
+      title: vCluster With Cilium L2 Announcements | Expose Tenant Clusters With Stable LoadBalancer IPs
+      date: 2026-05-13
+      evidence_url: https://blog.grosdouli.dev/blog/vcluster-updates-pt2
+    scoring:
+      points: 15
+      reviewer: hrittikhere
+      rationale: "Published part 2 of the series: exposing tenant clusters through LoadBalancer services with Cilium L2 Announcements, plus vCluster Platform setup"
+      approved_at: 2026-11-05T06:59:09Z
   - id: vc-2026-0001
     source_issue: 1
     ambassador:
