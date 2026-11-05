@@ -78,6 +78,21 @@ contributions:
       reviewer: hrittikhere
       rationale: "Published part 2 of the series: exposing tenant clusters through LoadBalancer services with Cilium L2 Announcements, plus vCluster Platform setup"
       approved_at: 2026-11-05T06:59:09Z
+  - id: vc-2026-0043
+    source_issue: 43
+    ambassador:
+      github_username: egrosdou01
+      github_user_id: 147995681
+    activity:
+      type: blog_post
+      title: vCluster Network Isolation With Cilium | Isolate Tenant Traffic and Observe Flows With Cilium Hubble
+      date: 2026-06-04
+      evidence_url: https://blog.grosdouli.dev/blog/vcluster-updates-pt3
+    scoring:
+      points: 20
+      reviewer: hrittikhere
+      rationale: "Tutorial-depth part 3: tenant isolation with Cilium, covering traffic isolation, policy enforcement, DNS resolution, and Hubble flow observability"
+      approved_at: 2026-11-05T06:59:45Z
   - id: vc-2026-0001
     source_issue: 1
     ambassador:
