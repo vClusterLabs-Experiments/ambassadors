@@ -168,6 +168,21 @@ contributions:
       reviewer: hrittikhere
       rationale: Published a vCluster blog post introducing and exploring GitOps Stack
       approved_at: 2026-09-01T07:38:42Z
+  - id: vc-2026-0045
+    source_issue: 45
+    ambassador:
+      github_username: egrosdou01
+      github_user_id: 147995681
+    activity:
+      type: blog_post
+      title: Cilium Gateway API for vCluster Tenant Clusters on RKE2 | Shared Gateway API Resources per Tenant
+      date: 2026-09-01
+      evidence_url: https://blog.grosdouli.dev/blog/vcluster-cilium-gateway-api-shared-resources
+    scoring:
+      points: 20
+      reviewer: hrittikhere
+      rationale: Tutorial-depth guide to sharing Gateway API resources and CRDs between the control plane cluster and tenant clusters with Cilium
+      approved_at: 2026-11-05T07:01:07Z
   - id: vc-2026-0031
     source_issue: 31
     ambassador:
