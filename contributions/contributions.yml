@@ -48,6 +48,21 @@ contributions:
         Created the free GitOps for Platform Engineering course on Platform Engineering University,
           with a vCluster-based tenant isolation module
       approved_at: 2026-09-22T04:56:24Z
+  - id: vc-2026-0041
+    source_issue: 41
+    ambassador:
+      github_username: egrosdou01
+      github_user_id: 147995681
+    activity:
+      type: blog_post
+      title: vCluster Multi-Tenancy | Deploy Isolated Kubernetes Dev Environments With Helm
+      date: 2026-05-07
+      evidence_url: https://blog.grosdouli.dev/blog/vcluster-updates-pt1
+    scoring:
+      points: 15
+      reviewer: hrittikhere
+      rationale: Published part 1 of a hands-on series on deploying vCluster with Helm, including node assignment with taints, tolerations, and labels
+      approved_at: 2026-11-05T06:58:22Z
   - id: vc-2026-0001
     source_issue: 1
     ambassador:
