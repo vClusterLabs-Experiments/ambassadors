@@ -138,6 +138,21 @@ contributions:
       reviewer: hrittikhere
       rationale: Published a vCluster blog post introducing NVIDIA Dynamo integration
       approved_at: 2026-08-25T16:30:28Z
+  - id: vc-2026-0044
+    source_issue: 44
+    ambassador:
+      github_username: egrosdou01
+      github_user_id: 147995681
+    activity:
+      type: blog_post
+      title: Cilium Multi-Pool IPAM for vCluster on RKE2 | Per-Tenant PodCIDRs and LoadBalancer IP Pools
+      date: 2026-08-25
+      evidence_url: https://blog.grosdouli.dev/blog/vcluster-cilium-multi-pool-rke2
+    scoring:
+      points: 20
+      reviewer: hrittikhere
+      rationale: Tutorial-depth guide to per-tenant PodCIDRs and LoadBalancer IP pools using Cilium Multi-Pool IPAM on RKE2 1.35
+      approved_at: 2026-11-05T07:00:32Z
   - id: vc-2026-0010
     source_issue: 10
     ambassador:
