@@ -183,6 +183,21 @@ contributions:
       reviewer: hrittikhere
       rationale: Tutorial-depth guide to sharing Gateway API resources and CRDs between the control plane cluster and tenant clusters with Cilium
       approved_at: 2026-11-05T07:01:07Z
+  - id: vc-2026-0046
+    source_issue: 46
+    ambassador:
+      github_username: egrosdou01
+      github_user_id: 147995681
+    activity:
+      type: blog_post
+      title: Cilium Gateway API Resources for vCluster Tenant Clusters on RKE2 | Grafana Authentication with Keycloak
+      date: 2026-09-10
+      evidence_url: https://blog.grosdouli.dev/blog/vcluster-cilium-gateway-api-shared-resources-keycloak-grafana
+    scoring:
+      points: 20
+      reviewer: hrittikhere
+      rationale: "Tutorial-depth series capstone: Grafana OIDC authentication through Keycloak, exposed via shared Cilium Gateway API resources on tenant clusters"
+      approved_at: 2026-11-05T07:01:43Z
   - id: vc-2026-0031
     source_issue: 31
     ambassador:
